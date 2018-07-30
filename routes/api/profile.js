@@ -35,6 +35,7 @@ router.get(
       .catch(err => res.status(404).json(err));
   }
 );
+
 /**
  * @route GET api/profile
  * @Desc get create or edit profile
