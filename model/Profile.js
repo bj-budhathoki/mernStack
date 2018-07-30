@@ -113,13 +113,13 @@ const ProfileSchema = new Schema({
       },
       instagram: {
         type: String
-      },
-      date: {
-        type: Date,
-        default: Date.now
       }
     }
-  ]
+  ],
+  date: {
+    type: Date,
+    default: Date.now
+  }
 });
 const Profile = mongoose.model("profile", ProfileSchema);
 module.exports = Profile;
