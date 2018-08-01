@@ -6,8 +6,11 @@
   "author": "bijay budhathoki",
   "license": "MIT",
   "scripts": {
+    "client-install": "yarn install --prefix client",
+    "start": "node server.js",
     "server": "nodemon server.js",
-    "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check"
+    "client": "cd client && yarn start",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -21,6 +24,7 @@
     "validator": "^10.4.0"
   },
   "devDependencies": {
+    "concurrently": "^3.6.1",
     "eslint": "^5.2.0",
     "eslint-config-prettier": "^2.9.0",
     "nodemon": "^1.18.3"
