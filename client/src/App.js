@@ -1,16 +1,17 @@
 import React, { Component } from "react";
 import "./App.css";
+
+//components
+import Navbar from "./components/layout/Navbar";
+import Footer from "./components/layout/Footer";
+import Landing from "./components/layout/Landing";
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <button type="button" className="btn btn-primary">
-          Primary
-        </button>
-        <button type="button" className="btn btn-secondary">
-          Secondary
-        </button>
-        <i class="fab fa-android" />
+        <Navbar />
+        <Landing />
+        <Footer />
       </div>
     );
   }
