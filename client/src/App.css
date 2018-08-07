@@ -1,0 +1,26 @@
+body {
+  font-family: "Fira Code";
+}
+img {
+  width: 100%;
+}
+.landing {
+  position: relative;
+  background-image: url("./img/banner1.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  margin-top: -24px;
+  margin-bottom: -50px;
+}
+.landing-inner {
+  padding-top: 80px;
+}
+.dark-overlay {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
