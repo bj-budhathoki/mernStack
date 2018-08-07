@@ -48,7 +48,7 @@ class Login extends Component {
               <form onSubmit={this.handleSubmit}>
                 <TextFieldGroup
                   type="email"
-                  palceholder="Email Address"
+                  placeholder="Email Address"
                   name="email"
                   value={this.state.email}
                   onChange={this.handleChange}
@@ -56,7 +56,7 @@ class Login extends Component {
                 />
                 <TextFieldGroup
                   type="password"
-                  palceholder="password"
+                  placeholder="password"
                   name="password"
                   value={this.state.password}
                   onChange={this.handleChange}
